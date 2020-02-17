@@ -1,0 +1,29 @@
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+
+logging:
+  file: /var/log/sample-boot-application.log
+  level:
+    com:
+      netflix:
+        loadbalancer:
+          LoadBalancerContext: DEBUG
+    org:
+      nipu: DEBUG
+spring:
+  boot:
+    admin:
+      url: http://localhost:8086
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

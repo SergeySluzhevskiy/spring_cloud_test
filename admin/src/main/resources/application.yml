@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: admin
+  cloud:
+    config:
+      enabled: false
+server:
+  port: 8086
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/

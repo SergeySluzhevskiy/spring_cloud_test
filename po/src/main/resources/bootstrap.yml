@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: po
+  cloud:
+    config:
+      enabled: false
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+server:
+  port: 8083
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/

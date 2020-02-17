@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: pc
+  cloud:
+    config:
+      enabled: false
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+server:
+  port: 8081 # use another run configuration to start 2 local instances
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
