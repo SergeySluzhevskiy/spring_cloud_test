@@ -7,12 +7,12 @@ logging:
           netflix:
             zuul: DEBUG
 zuul:
-  ignoredServices: '*'
-  sensitiveHeaders: Cookie,Set-Cookie
+#  ignoredServices: '*'
+#  sensitiveHeaders: Cookie,Set-Cookie
   routes:
-    oauth:
-      path: /oauth/**
-      url: http://localhost:8087/spring-security-oauth-server/oauth
+#    oauth:
+#      path: /oauth/**
+#      url: http://localhost:8087/spring-security-oauth-server/oauth
     pc: /product/**
     # Allows to request by http://localhost:8085/product/catalog/
     po:
